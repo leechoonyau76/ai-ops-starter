@@ -1,3 +1,4 @@
+import type { Metadata } from 'next'
 import { Navigation } from "@/components/landing/navigation";
 import { HeroSection } from "@/components/landing/hero-section";
 import { FeaturesSection } from "@/components/landing/features-section";
@@ -12,6 +13,20 @@ import { FitSection } from "@/components/landing/fit-section";
 import { PricingSection } from "@/components/landing/pricing-section";
 import { CtaSection } from "@/components/landing/cta-section";
 import { FooterSection } from "@/components/landing/footer-section";
+
+export const metadata: Metadata = {
+  title: 'Notion AI Ops Starter for SSAs | clickTRUE',
+  description: 'A structured first step into Notion AI for Social Service Agencies. Centralise knowledge, decisions, and work — boosting non-profits\' AI productivity.',
+  alternates: {
+    canonical: 'https://notion.clicktrue.biz/notion-ai-ops-starter-ssa',
+  },
+  openGraph: {
+    title: 'Notion AI Ops Starter for SSAs | clickTRUE',
+    description: 'A structured first step into Notion AI for Social Service Agencies. Centralise knowledge, decisions, and work — boosting non-profits\' AI productivity.',
+    url: 'https://notion.clicktrue.biz/notion-ai-ops-starter-ssa',
+    type: 'website',
+  },
+}
 
 export default function Home() {
   return (
@@ -30,6 +45,20 @@ export default function Home() {
       <PricingSection />
       <CtaSection />
       <FooterSection />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{__html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": "Notion AI Ops Starter for SSAs",
+          "applicationCategory": "BusinessApplication",
+          "operatingSystem": "Web",
+          "description": "A structured first step into Notion AI for Social Service Agencies. Centralise knowledge, decisions, and work — boosting non-profits' AI productivity.",
+          "url": "https://notion.clicktrue.biz/notion-ai-ops-starter-ssa",
+          "offers": {"@type": "Offer", "price": "0", "priceCurrency": "SGD"},
+          "provider": {"@type": "Organization", "name": "clickTRUE", "url": "https://www.clicktrue.biz"}
+        })}}
+      />
     </main>
   );
 }

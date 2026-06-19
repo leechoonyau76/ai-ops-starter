@@ -25,9 +25,13 @@ export const metadata: Metadata = {
     description: 'A structured first step into Notion AI for Social Service Agencies. Centralise knowledge, decisions, and work — boosting non-profits\' AI productivity.',
     url: 'https://notion.clicktrue.biz/notion-ai-ops-starter-ssa',
     type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    images: ['/og-image.jpg'],
   },
 }
-
 export default function Home() {
   return (
     <main className="relative min-h-screen overflow-x-hidden noise-overlay">

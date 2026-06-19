@@ -26,6 +26,9 @@ export const metadata: Metadata = {
   description:
     'One connected Notion + AI foundation that pulls your scattered knowledge, work, and communication into one place — so your SSA stops losing time, decisions, and good people to disconnected ways of working.',
   generator: 'v0.app',
+  verification: {
+    google: 'tAh7_eGY0ehRPACQOYiaEo0P4hs4WPDy6qNJ6Hujqkc',
+  },
 }
 
 export default function RootLayout({

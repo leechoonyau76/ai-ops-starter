@@ -21,6 +21,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://notion.clicktrue.biz'),
   title: 'AI Ops Starter for SSAs — clickTRUE × Notion',
   description:
     'One connected Notion + AI foundation that pulls your scattered knowledge, work, and communication into one place — so your SSA stops losing time, decisions, and good people to disconnected ways of working.',

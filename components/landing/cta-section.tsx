@@ -85,12 +85,12 @@ export function CtaSection() {
                     className="h-14 px-8 text-base rounded-full border-foreground/20 hover:bg-foreground/5"
                     asChild
                   >
-                    <a href="mailto:jereme@clicktrue.biz">Email us</a>
+                    <a href="mailto:hello@clicktrue.biz">Email us</a>
                   </Button>
                 </div>
 
                 <p className="text-sm text-muted-foreground mt-8 font-mono">
-                  Jereme Wong, COO · jereme@clicktrue.biz
+                  Jereme Wong, Partner · Non-Profit & B2B Industry Lead
                 </p>
               </div>
 
